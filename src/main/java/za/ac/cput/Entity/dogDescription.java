@@ -1,8 +1,7 @@
 package za.ac.cput.Entity;
 
 /*
-
-    Entity for the DogDescription
+   Entity for the DogDescription
     Author: Sinoxolo Jaca
     Date: 04 June 2021
  */
