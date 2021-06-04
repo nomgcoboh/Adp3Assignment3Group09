@@ -6,12 +6,12 @@ package za.ac.cput.Entity;
     Date: 04 June 2021
  */
 
-public class dogDescription {
+public class DogDescription {
 
     private int id;
     private String type;
 
-    private dogDescription(Builder builder){
+    private DogDescription(Builder builder){
 
         this.id = builder.id;
         this.type = builder.type;
@@ -50,7 +50,7 @@ public class dogDescription {
             return this;
         }
 
-        public Builder copy(dogDescription desc){
+        public Builder copy(DogDescription desc){
 
             this.id = desc.id;
             this.type = desc.type;
@@ -58,9 +58,9 @@ public class dogDescription {
             return this;
         }
 
-        public dogDescription build(){
+        public DogDescription build(){
 
-            return new dogDescription(this);
+            return new DogDescription(this);
         }
 
 
