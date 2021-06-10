@@ -5,8 +5,8 @@ Date:10 June 2021
  */
 package za.ac.cput.Factory;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import za.ac.cput.Entity.Customer;
@@ -71,7 +71,7 @@ class CustomerFactoryTest
         TimeUnit.SECONDS.sleep(10);
     }
 
-    @Ignore
+    @Disabled
     @Test
     void temporarilyDisabledTest( )
     {
