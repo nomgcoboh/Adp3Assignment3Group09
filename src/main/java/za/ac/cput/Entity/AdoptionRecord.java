@@ -12,7 +12,7 @@ import java.util.Date;
 public class AdoptionRecord {// start of AdoptionRecord class
 
     //Attributes
-    private String adoptionId;
+    private int adoptionId;
     private int dogId;
     private int customerId;
     private int staffId;
@@ -44,14 +44,14 @@ public class AdoptionRecord {// start of AdoptionRecord class
     public static class Builder {
 
         //Attributes
-        public String adoptionId;
+        public int adoptionId;
         public int customerId;
         public Date date;
         public int dogId;
         public int staffId;
 
         //Builder initialisation
-        public Builder setAdoptionId(String adoptionId) {
+        public Builder setAdoptionId(int adoptionId) {
             this.adoptionId = adoptionId;
             return this;
         }

@@ -9,18 +9,17 @@ package za.ac.cput.Factory;
 
 
 import za.ac.cput.Entity.AdoptionRecord;
-import za.ac.cput.Util.GenericHelper;
 
 import java.util.Date;
 
 public class AdoptionRecordFactory {//start of AdoptionRecordFactory class
 
+    private static int id = 0;
 
-    public static AdoptionRecord createAdoptionRecord( int dogId, int customerId, int staffId, Date date)
+    public static AdoptionRecord createAdoptionRecord(int dogId, int customerId, int staffId, Date date)
     {
-        String adoptionRecordId = GenericHelper.generateId();
         return new AdoptionRecord.Builder()
-                .setAdoptionId(adoptionRecordId)
+                .setAdoptionId(++ id)
                 .setDogId(dogId)
                 .setCustomerId(customerId)
                 .setStaffId(staffId)

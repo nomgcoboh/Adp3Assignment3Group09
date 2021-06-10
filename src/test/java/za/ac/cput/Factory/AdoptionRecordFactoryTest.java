@@ -10,10 +10,8 @@ import za.ac.cput.Entity.AdoptionRecord;
 
 import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class AdoptionRecordFactoryTest {
-    private Date date= new Date();
+    private final Date date= new Date();
     @Test
     public void createAdoptionRecord(){
 
